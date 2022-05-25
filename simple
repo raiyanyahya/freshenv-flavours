@@ -3,7 +3,7 @@ FROM {{ base }}
 
 LABEL maintainer="Custom Environment"
 
-RUN {{ install|escape }}
+RUN {% install %}
 
 USER root
 ENV TERM xterm
